@@ -54,4 +54,11 @@ Here's an example showing real html on google.com that I accessed through the De
 </div>
 ```
 
-Now, aside from the enormous amounts of data between each pair of HTML tags, did you notice anything weird about the 'Google HTML'? Maybe you're wondering what 'Classes' are, and what they do *wink wink*?
+Now, aside from the enormous amounts of data between each pair of HTML tags, did you notice anything weird about the 'Google HTML'? Maybe you're wondering what 'Classes' are, and what they do (*wink wink*)? Well, simply put, classes are used to group html elements that coders want to style in a similar manner. For example, all of the paragraphs on a website could share a class that makes their font-size be 20px, or they could also share a class that makes their color be green. 
+
+For us, however, what the classes do doesn't actually matter. The only reason that they're important to us is that classes allow us to filter the data that we've scraped, in order to select only the data that's important to us.
+
+Right now, visit the url of our economist article, and take a look at the class(es) assigned to the html element(s) that are storing our article!
+
+
+![Image of Economist Article](https://imgur.com/1J86Pff)
