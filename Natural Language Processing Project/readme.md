@@ -117,3 +117,6 @@ if __name__ == "__main__":
 ```
 
 Don't worry if it takes forever for your code to run - expect to wait at least 1-2 minutes while the machine learning model trains itself. In the meantime, prepare to have your mind blown!!
+
+## Last Thoughts
+Natural language processing is one of the many powerful technologies that will become a staple of the 21st century. I hope that we've done today will inspire you to continue learning to code, and finding more crazy things to build!
