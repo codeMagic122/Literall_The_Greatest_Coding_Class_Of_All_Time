@@ -69,8 +69,19 @@ Using Inspect Element, we are able to see that each paragraph of our article is 
 So how can we now use this information? Well, with Beautiful Soup we'll simply  select all *paragraph elements* with class of *'article__body-text'*. Then, to check if your code worked, print that selection out:
 
 ```python
-articleText = soup.findAll('p',{'class':'article__body-text'})
-print(articleText)
+paragraphs = soup.findAll('p',{'class':'article__body-text'})
+print(paragraphs)
 ```
 
-##Converting parsed HTML to plaintext form
+## Converting parsed HTML to plaintext form
+At this point we are nearly finished! The last step is to convert our parsed HTML into straight text, so that it's easy to read, and comprehend. To do this we're going to create a variable called 'article', and then we're going to add the text content in every single paragraph to article.
+
+```python
+article = ''
+for paragraph in paragraphs:
+  article += paragraph.text
+print(article)
+```
+
+## Last Thoughts
+Hopefully by now you have a better understanding of web scraping, and will also have a greater appreciation for all of the crazy (stuff) you can do with it! Reach out if you have any questions, and stay tuned for future lessons!
