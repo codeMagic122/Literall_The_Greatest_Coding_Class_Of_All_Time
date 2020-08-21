@@ -53,3 +53,5 @@ Here's an example showing real html on google.com that I accessed through the De
   </div>
 </div>
 ```
+
+Now, aside from the enormous amounts of data between each pair of HTML tags, did you notice anything weird about the 'Google HTML'? Maybe you're wondering what 'Classes' are, and what they do *wink wink*?
