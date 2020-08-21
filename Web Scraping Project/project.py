@@ -14,11 +14,8 @@ page = requests.get(link)
 # Parse the data that our get request returns into a form that we can then use
 soup = BeautifulSoup(page.content,'html.parser')
 
-# Print the value of soup in the console to check that your code worked
-print(soup)
-
-# PART 2 - Make sure that the link you've selected goes to an article from the economist!
-# At this point, we've now learned how to get all the data we can possibly get from the website of our choice. But how do we get specific pieces of data? Like how do we get the text of an article, and nothing else?
-# This is where Beautiful Soup comes in handy. Beautiful Soup allows us to parse the data we get back from a website, to only get information that we care about
-
-# 
+paragraphs = soup.findAll('p',{'class':'article__body-text'})
+article = ''
+for paragraph in paragraphs:
+  article += paragraph.text
+print(article)
