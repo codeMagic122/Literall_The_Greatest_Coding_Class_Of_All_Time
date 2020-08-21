@@ -61,4 +61,4 @@ For us, however, what the classes do doesn't actually matter. The only reason th
 Right now, visit the url of our economist article, and take a look at the class(es) assigned to the html element(s) that are storing our article!
 
 
-![Image of Economist Article](https://imgur.com/1J86Pff)
+![Image of Economist Article](https://i.imgur.com/1J86Pff.png)
