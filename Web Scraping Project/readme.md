@@ -64,6 +64,8 @@ Using Inspect Element, we are able to see that each paragraph of our article is 
 
 ![Image of Economist Article](https://i.imgur.com/1J86Pff.png)
 
+Zoomed In:
+
 ![Image of Economist Article](https://i.imgur.com/gTlkewf.png)
 
 So how can we now use this information? Well, with Beautiful Soup we'll simply  select all *paragraph elements* with class of *'article__body-text'*. Then, to check if your code worked, print that selection out:
