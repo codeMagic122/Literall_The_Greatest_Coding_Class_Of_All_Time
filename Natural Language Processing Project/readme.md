@@ -1,0 +1,2 @@
+## Introduction
+Welcome to the second tutorial in this course! Like always, my goal today is to blow your minds - this time with a fancy little thing called Natural Language Processing. Natural Language Processing, or NLP is essentially a methodology for analyzing, understanding, and giving context to groupings of words progromatically. It's extremely powerful, only growing in use, and today, you're going to learn how to use it!
