@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Url of article you want to request
+# URL of article you want to request
 link = "https://www.economist.com/business/2020/08/18/america-closes-the-last-loophole-in-its-hounding-of-huawei"
 
 # Request the link
