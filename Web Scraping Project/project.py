@@ -1,21 +1,23 @@
-# Today we're going to learn about the basics of web scraping! Don't worry about the fact that none of the things you're doing make sense! 
-# We'll go step by step, and take the time to answer any and all questions you might have :D
-
-# Import the libraries that are needed for this project
+# Import packages
 import requests
 from bs4 import BeautifulSoup
 
-# Get the url of the website you want to scrape, and set it as the value of 'link'
+# Url of article you want to request
 link = "https://www.economist.com/business/2020/08/18/america-closes-the-last-loophole-in-its-hounding-of-huawei"
 
 # Request the link
 page = requests.get(link)
 
-# Parse the data that our get request returns into a form that we can then use
+# Make data readable with Beautiful Soup
 soup = BeautifulSoup(page.content,'html.parser')
 
+# Parse article paragraphs from soup
 paragraphs = soup.findAll('p',{'class':'article__body-text'})
+
+# Convert paragraphs into plaintext article
 article = ''
 for paragraph in paragraphs:
   article += paragraph.text
+  
+#  Print article
 print(article)
