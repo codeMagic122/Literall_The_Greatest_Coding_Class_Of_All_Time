@@ -60,10 +60,15 @@ For us, however, what the classes do doesn't actually matter. The only reason th
 
 Right now, visit the url of our economist article, and take a look at the class(es) assigned to the html element(s) that are storing our article!
 
-Using Inspect Element, we are able to see that each paragraph of our article is stored in a 'p tag' with a class of 'article__body__text'
+Using Inspect Element, we are able to see that each paragraph of our article is stored in a 'p tag' with a class of 'article__body-text'
 
 ![Image of Economist Article](https://i.imgur.com/1J86Pff.png)
-*Looking at Economist Article in Inspect Element*
 
 ![Image of Economist Article](https://i.imgur.com/gTlkewf.png)
-*Looking at Economist Article in Inspect Element Zoomed In*
+
+So how can we now use this information? Well, with Beautiful Soup we'll simply  select all *paragraph elements* with class of *'article__body-text'*. Then, to check if your code worked, print that selection out:
+
+```python
+articleText = soup.findAll('p',{'class':'article__body-text'})
+print(articleText)
+```
