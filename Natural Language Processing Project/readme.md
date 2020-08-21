@@ -13,4 +13,6 @@ Press run. Then after your code finishes running, execute the following lines in
 ```bash
 nltk.download('twitter_samples')
 nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
 ```
