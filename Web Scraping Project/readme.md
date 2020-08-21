@@ -1,6 +1,7 @@
 Today we're going to learn about the basics of web scraping! Don't worry about the fact that none of the things you're doing make sense! We'll go step by step, and take the time to answer any and all questions you might have :D
 
 Import the libraries that are needed for this project
+
 import requests
 from bs4 import BeautifulSoup
 
