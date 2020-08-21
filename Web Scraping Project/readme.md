@@ -54,4 +54,36 @@ Here's an example showing real html on google.com that I accessed through the De
 </div>
 ```
 
-Now, aside from the enormous amounts of data between each pair of HTML tags, did you notice anything weird about the 'Google HTML'? Maybe you're wondering what 'Classes' are, and what they do *wink wink*?
+Now, aside from the enormous amounts of data between each pair of HTML tags, did you notice anything weird about the 'Google HTML'? Maybe you're wondering what 'Classes' are, and what they do (*wink wink*)? Well, simply put, classes are used to group html elements that coders want to style in a similar manner. For example, all of the paragraphs on a website could share a class that makes their font-size be 20px, or they could also share a class that makes their color be green. 
+
+For us, however, what the classes do doesn't actually matter. The only reason that they're important to us is that classes allow us to filter the data that we've scraped, in order to select only the data that's important to us.
+
+Right now, visit the url of our economist article, and take a look at the class(es) assigned to the html element(s) that are storing our article!
+
+Using Inspect Element, we are able to see that each paragraph of our article is stored in a 'p tag' with a class of 'article__body-text'
+
+![Image of Economist Article](https://i.imgur.com/1J86Pff.png)
+
+Zoomed In:
+
+![Image of Economist Article](https://i.imgur.com/gTlkewf.png)
+
+So how can we now use this information? Well, with Beautiful Soup we'll simply  select all *paragraph elements* with class of *'article__body-text'*. Then, to check if your code worked, print that selection out:
+
+```python
+paragraphs = soup.findAll('p',{'class':'article__body-text'})
+print(paragraphs)
+```
+
+## Converting parsed HTML to plaintext form
+At this point we are nearly finished! The last step is to convert our parsed HTML into straight text, so that it's easy to read, and comprehend. To do this we're going to create a variable called 'article', and then we're going to add the text content in every single paragraph to article.
+
+```python
+article = ''
+for paragraph in paragraphs:
+  article += paragraph.text
+print(article)
+```
+
+## Last Thoughts
+Hopefully by now you have a better understanding of web scraping, and will also have a greater appreciation for all of the crazy (stuff) you can do with it! Reach out if you have any questions, and stay tuned for future lessons!
