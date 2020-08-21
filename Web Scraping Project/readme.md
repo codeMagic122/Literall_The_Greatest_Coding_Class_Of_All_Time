@@ -72,3 +72,5 @@ So how can we now use this information? Well, with Beautiful Soup we'll simply  
 articleText = soup.findAll('p',{'class':'article__body-text'})
 print(articleText)
 ```
+
+##Converting parsed HTML to plaintext form
