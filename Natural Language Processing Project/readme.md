@@ -1,6 +1,13 @@
 ## Introduction
 Welcome to the second tutorial in this course! Like always, my goal today is to blow your minds - this time with a fancy little thing called Natural Language Processing. Natural Language Processing, or NLP is essentially a methodology for analyzing, understanding, and giving context to groupings of words progromatically. It's extremely powerful, only growing in use, and today, you're going to learn how to use it!
 
+## Installing Dependencies
+Before we can start using natural language processing, we must first import the requisite packages. Begin by heading over to replt.it, creating a Python REPL, and importing the following packages
+
+```python
+
+```
+
 ## Pure Craziness - Using Machine Learning to Gauge the Sentiment of a tweet!!
 Allright guys, ****'s about to get crazy!! I don't expect any of you to understand what this code is saying. I don't even expect you to understand what's it's doing. All I want you guys to realize is that we're literally using machine learning to gauge the sentiment of a tweet - and we're only using 100 lines of code!! To start, open up a new Python REPL
 
