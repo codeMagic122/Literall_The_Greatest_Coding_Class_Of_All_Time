@@ -9,7 +9,7 @@ In the main.py file:
 import nltk
 ```
 
-In the Bash console:
+Press run. Then after your code finishes running, execute the following line in the Bash console:
 ```bash
 nltk.download('twitter_samples')
 ```
