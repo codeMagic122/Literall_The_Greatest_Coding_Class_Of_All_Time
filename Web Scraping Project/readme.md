@@ -29,3 +29,8 @@ Once you've added the code below, comment out the previous print statement.
 soup = BeauitfulSoup(page.content,'html.parser')
 print(soup)
 ```
+
+## Parsing specific information
+Now that we've successfully beautified our requested data with Beautiful Soup, the next step is to parse it! Parsing, is the process of getting specific pieces of data from a larger dataset. In our case, it's going to be getting the text of an economist article from all the data that on the page where that article exists. However, before we do so, we're going to need a quick introduction to HTML, the skeleton structure of every website you'll ever use (probably)!
+
+The first thing you need to know about HTML
