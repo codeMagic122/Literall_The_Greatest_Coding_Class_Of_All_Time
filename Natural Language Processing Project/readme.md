@@ -1,12 +1,24 @@
 ## Introduction
 Welcome to the second tutorial in this course! Like always, my goal today is to blow your minds - this time with a fancy little thing called Natural Language Processing. Natural Language Processing, or NLP is essentially a methodology for analyzing, understanding, and giving context to groupings of words progromatically. It's extremely powerful, only growing in use, and today, you're going to learn how to use it!
 
+In order to learn about NLP, we're going to build a speech analyzer, that will allow its users to input a speech of their choice, and then figure out if that speech aligns more with one oppinion, or another. Here's how it will work:
+1) The user gives us three speeches - The first speech will be in support of an idea, the second speech will be in opposition to an idea, and the last speech will be compared to the previous two speeches to figure out if the person giving that third speech is in support or opposition to an idea.
+2) We take all three speeches, and use NLP to remove unimportant words (Like 'is' and 'and'), and then we figure out the words that are most commonly used in the opposition and support speech, as well as in the speech that we're checking
+3) We figure out if the wording used in the speech to check is more similar to the speech that's in support or opposition, and then tell our user how that speech aligns
+
 ## Installing Dependencies
 Before we can start using natural language processing, we must first import the requisite packages. Begin by heading over to replt.it, creating a Python REPL, and importing the following packages
 
 ```python
-
+import spacy
+import json
+import string
+from collections import Counter
 ```
+
+## Basic Setup
+The first thing you all need to understand about NLP, is the fundamental manner in which it functions. Simply put, Natural Language Processing starts by dividing up sentences into bunches of tokens that seperate individual words and functions. Today, we're going to learn how to create a basic speech analyzer, which means that we'll be focusing on the words, and will not want to look at punctuation
+
 
 ## Pure Craziness - Using Machine Learning to Gauge the Sentiment of a tweet!!
 Allright guys, ****'s about to get crazy!! I don't expect any of you to understand what this code is saying. I don't even expect you to understand what's it's doing. All I want you guys to realize is that we're literally using machine learning to gauge the sentiment of a tweet - and we're only using 100 lines of code!! To start, open up a new Python REPL
