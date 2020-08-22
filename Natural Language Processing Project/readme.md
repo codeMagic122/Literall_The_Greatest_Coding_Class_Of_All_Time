@@ -17,8 +17,15 @@ from collections import Counter
 ```
 
 ## Basic Setup
-The first thing you all need to understand about NLP, is the fundamental manner in which it functions. Simply put, Natural Language Processing starts by dividing up sentences into bunches of tokens that seperate individual words and functions. Today, we're going to learn how to create a basic speech analyzer, which means that we'll be focusing on the words, and will not want to look at punctuation
+The first thing you all need to understand about NLP, is the fundamental manner in which it functions. Simply put, Natural Language Processing starts by dividing up sentences into bunches of tokens that seperate individual words and punctuation. Then NLP santizes sentences by removing 'stop words' (words like 'for', 'and', 'but', etc.), and lemmatizes words into their simplest forms (e.g. running becomes run, swimming becomes swim). Lemmatization is especially crucial because it allows us to compare words with nearly identical meanings, even if those words' forms are different. 
 
+To begin, let's find the three speeches that we want to use for our project. Feel free to copy my speeches below, but if you want to find your own, make sure that they encompass the whole issue - meaning that they don't make one argument but the entire argument.
+
+```python
+proSpeech = ''
+antiSpeech = ''
+checkSpeech = ''
+```
 
 ## Pure Craziness - Using Machine Learning to Gauge the Sentiment of a tweet!!
 Allright guys, ****'s about to get crazy!! I don't expect any of you to understand what this code is saying. I don't even expect you to understand what's it's doing. All I want you guys to realize is that we're literally using machine learning to gauge the sentiment of a tweet - and we're only using 100 lines of code!! To start, open up a new Python REPL
